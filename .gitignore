@@ -1,0 +1,19 @@
+/backend/node_modules
+/frontend/node_modules
+
+# התעלמות מקבצי מערכת נוספים
+.DS_Store
+Thumbs.db
+
+# התעלמות מקבצי build
+/build
+/dist
+
+# התעלמות מקבצי לוגים
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# התעלמות מהתיקיות של IDEs
+.vscode/
+.idea/
