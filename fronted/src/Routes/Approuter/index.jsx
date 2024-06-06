@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { HushRouter, Route, Routes, useLocation } from "react-router-dom";
 import AppContainer from "../Appcontainer";
 import store from "../../store";
 import { Provider } from "react-redux";
@@ -72,7 +72,7 @@ const AppRouter = () => {
   return (
     <div>
       <Provider store={store}>
-        <BrowserRouter basename="/react/template">
+        <HushRouter basename="/react/template">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Login />} />
@@ -126,7 +126,7 @@ const AppRouter = () => {
             <Route path="*" element={<Navigate to="/" />} />
             <Route path='/foremployee' element={<GiftForEmployee></GiftForEmployee>}> </Route>
           </Routes>
-        </BrowserRouter>
+        </HushRouter>
       </Provider>
     </div>
   );
