@@ -40,7 +40,7 @@ const Register = (props) => {
   const onSubmit = async (data) => {
     console.log(data);
     try {
-      const response = await axios.post("http://localhost:5000/register", data);
+      const response = await axios.post("https://wolbee-mvp-2.onrender.com//register", data);
       console.log(response.data); // אולי תרצה להציג הודעה למשתמש שההרשמה הצליחה
       setCheckUser(true);
       // const managerId = data.id;
