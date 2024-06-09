@@ -347,7 +347,7 @@ const AllEmployeeAddPopup = () => {
 
       console.log(data);
 
-      const response = await axios.post("http://localhost:5000/addemployee", data);
+      const response = await axios.post("https://wolbee-mvp-2.onrender.com/addemployee", data);
       console.log(response.data);
       // setCheckUser(true);
       // navigate("/");
