@@ -20,7 +20,7 @@ app.use(cors(corsOptions));
 
 
 const xlsx = require('xlsx');
-const workbook = xlsx.readFile('C:/Users/benal/Desktop/themeforest-psinWIdw-smarthr-react-an-template/react/template/backend/employees.xlsx');
+const workbook = xlsx.readFile('employees.xlsx');
 const worksheet = workbook.Sheets[workbook.SheetNames[0]];
 const data = xlsx.utils.sheet_to_json(worksheet);
 
